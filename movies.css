@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+  }
+  .content{
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .div1{
+   
+    display: flex;
+  }
+  .nav{
+    padding: 0.8rem;
+   background:linear-gradient(to bottom right,#ffff99 0%,#ccffcc 100%);
+  }
+  .ul{
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    display: flex;
+  }
+  .nav li{
+    list-style: none;
+  }
+  .log{
+    text-decoration: none;
+  }
+  .logo{
+    border-radius: 0.5rem;
+    text-decoration: none;
+    padding: 0.2rem 0.7rem;
+    box-shadow:3px 3px 0px 0px rgba(0 ,0 ,0 ,0.33)  ;
+    background:linear-gradient(to right,#993300 6%,#ffff99 95%);
+  }
+  .ul a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+  }
+  .slider {
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+    height: 75vh;
+    width: 90vw;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  .slide.current {
+    
+    opacity: 1;
+  }
+  .buttons button#next {
+    position: absolute;
+    top: 40%;
+  
+    right: 13%;
+  }
+  
+  .buttons button#prev {
+    position: absolute;
+    top: 40%;
+   
+    left: 15px;
+  }
+  
+  .buttons button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+  }
+  
+  .buttons button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  @media (max-width: 500px) {
+    .slide .content {
+      bottom: -300px;
+      left: 0;
+      width: 100%;
+    }
+  
+    .slide.current .content {
+      transform: translateY(-300px);
+    }
+  }
+  
+  /* Backgorund Images */
+   
+  .slide:first-child {
+    background: url("https://internship.suvenconsultants.com/projects/365webproject/365mov/abc1.jpg") no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(2) {
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/abc2.jpg') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(3) {
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/abc3.jpg') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(4) {
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/abc4.jpg') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(5) {
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/abc5.jpg') no-repeat
+      center top/cover;
+  } 
+  .slide:nth-child(6)  {
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/abc3.jpg') no-repeat
+      center center/cover;
+  }
+  /*########### search bar #############*/
+.mlist{
+  position: relative;
+  border: 2px solid #333;
+}
+.search{
+  position: absolute;
+}
+.search .ul .li{
+  margin: 4rem;
+}
+ .search ul li{
+   list-style: none;
+  
+   width: 120px;
+   height: 30px;
+  
+ }
+ .search .lii .a{
+   text-decoration: none;
+   color: black;
+   padding: 0.5rem 1rem;
+   background-color:yellow;
+   display: block;
+ }
+ .lii ul li{
+  width: 120px;
+  height: 30px;
+   display: none;
+   background-color: white;
+  
+ }
+ .lii ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 1rem;
+ 
+  display: block;
+ }
+ .search ul li:hover ul li{
+  display: block;
+  }
+
+  
+ .lii ul li:hover{
+   background-color: yellow;
+ }
+
+ .sea-btn{
+  
+  margin-left: 35%;
+ display: flex;
+
+  }
+.sea-btn a{
+  display: block;
+  background-color: whitesmoke;
+  width: 4%;
+  padding: 0.3rem;
+}
+
+.mlist input{
+  color: #333;
+  height: 40px;
+  width: 95%;
+  left: 30%;
+ 
+  background-color: yellow;
+  
+  text-align: center;
+}
+                                                                                     
+/*.mlist input{
+  margin: 0.5rem auto;
+  display: block;
+  padding: 0rem 7rem;
+}*/
+
+  /*#################### images part ########################*/
+  .img div{
+    height:30%;
+   margin-top:76%;
+   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  }
+  .img p{
+    font-size: 0.7rem;
+  }
+  .movie{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3.5rem;
+  }
+  .img{
+    text-align: center;
+    margin: 0.4rem;
+    width: 12rem;
+    height: 13rem;
+  }
+
+  .img0{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano1.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img1{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano2.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img2{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano3.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img3{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano4.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img4{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano5.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img5{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano6.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img6{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano7.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img7{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano8.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img8{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano9.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img9{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano10.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img10{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano11.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img11{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano12.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img12{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano13.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img13{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano14.jpg') no-repeat
+      center top/cover;
+  }
+
+
+  .img14{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano15.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img15{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano16.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img16{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano17.jpg') no-repeat
+      center top/cover;
+  }
+
+
+  .img17{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano18.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img18{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano19.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img19{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano20.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img20{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano21.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img21{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano22.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img22{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano23.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img23{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano24.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img24{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano25.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img25{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano26.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img26{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano27.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img27{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano28.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img28{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano29.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img29{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano30.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img30{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano31.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img31{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano32.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img32{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano33.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img33{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano34.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img34{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano35.jpg') no-repeat
+      center top/cover;
+  }
+
+  .img35{
+    background: url('https://internship.suvenconsultants.com/projects/365webproject/365mov/nano36.jpg') no-repeat
+      center top/cover;
+  }
+
+
+  .footer{
+    padding: 0.8rem;
+    background:linear-gradient(to bottom right,#ffff99 0%,#ccffcc 100%);
+    
+   }
+  .footer p{
+    color: #333;
+    margin: 0.8rem 3rem;
+    font-size: 0.8rem;
+  }
+
+/* ##################### media queries#################*/
+@media (max-width:500px){
+  .slider{
+    width: 100vw;
+    height: 60vh;
+  }
+  .movie .img{
+    width: 8rem;
+    height: 9.5rem;
+  }
+  .mlist input{
+    width: 300px;
+  }
+  .sea-btn{
+    margin-left: 35%;
+  }
+  .sea-btn a{
+    width: 50px;
+  }
+  .search ul li{
+    width: 90px;
+  }
+}

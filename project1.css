@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+}
+.content{
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.div1{
+ 
+  display: flex;
+}
+.nav{
+  padding: 0.8rem;
+  background:linear-gradient(to bottom right,#ffff99 0%,#ccffcc 100%);
+}
+.ul{
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  display: flex;
+}
+.nav li{
+  list-style: none;
+}
+.log{
+  text-decoration: none;
+}
+.logo{
+  border-radius: 0.5rem;
+  text-decoration: none;
+  padding: 0.2rem 0.7rem;
+  box-shadow:3px 3px 0px 0px rgba(0 ,0 ,0 ,0.33)  ;
+  background:linear-gradient(to right,#993300 6%,#ffff99 95%);
+  
+}
+.ul a{
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+}
+.slider {
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+  height: 75vh;
+  width: 90vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  
+}
+
+.slide.current {
+  
+  opacity: 1;
+}
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+
+  right: 13%;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+ 
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+/* Backgorund Images */
+ 
+.slide:first-child {
+  background: url("./img/abc1.jpg") no-repeat
+    center top/cover;
+}
+.slide:nth-child(2) {
+  background: url('./img/abc2.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('./img/abc3.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(4) {
+  background: url('./img/abc4.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(5) {
+  background: url('./img/abc5.jpg') no-repeat
+    center top/cover;
+} 
+.slide:nth-child(6)  {
+  background: url('./img/abc6.jpg') no-repeat
+    center center/cover;
+}
+
+/*s########## section #############*/
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  width: 100%;
+  
+}
+.section{
+  margin-bottom:4rem ;
+}
+.one{
+  
+  text-align: center;
+  margin-right: 0.6rem;
+  width: 12rem;
+  height: 13rem;
+}
+.one div{
+  height:37%;
+ margin-top:70%;
+ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+.div2{
+  background: url("./img/oop1.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div3{
+  background: url("./img/oop2.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div4{
+  background: url("./img/oop3.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div5{
+  background: url("./img/oop4.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div6{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop5.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div7{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop6.jpg") no-repeat
+  center top/cover;
+ }
+/*########### section2####################*/
+ .div8{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop7.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div9{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop8.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div10{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop9.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div11{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop10.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div12{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop11.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div13{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop12.jpg") no-repeat
+  center top/cover;
+ }
+ /*######################### section 3##########################*/
+ .div14{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop13.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div15{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop14.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div16{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop15.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div17{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop16.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div18{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop17.jpg") no-repeat
+  center top/cover;
+ }
+
+ .div19{
+  background: url("https://internship.suvenconsultants.com/projects/365webproject/365epimages/oop18.jpg") no-repeat
+  center top/cover;
+ }
+
+ .section p{
+   font-size: 0.7rem;
+ }
+
+
+ /*####################### footer part ######################*/
+
+ .footer{
+  padding: 0.8rem;
+  background:linear-gradient(to bottom right,#ffff99 0%,#ccffcc 100%);
+  
+ }
+.footer p{
+  color: #333;
+  margin: 0.8rem 3rem;
+  font-size: 0.8rem;
+}
+
+/*################### media queries#########################*/
+@media(max-width: 500px){
+ .slider{
+   width: 100vw;
+   height: 60vh;
+ }
+  .section .one{
+    width: 8rem;
+    height: 9.5rem;
+  }
+
+}
+  
+ 
